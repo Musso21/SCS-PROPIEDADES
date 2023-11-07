@@ -1,5 +1,5 @@
 :root {
-    --main-color: #2C8A6A;
+    --main-color: #468e90;
 }
 
 #logo {
@@ -23,11 +23,25 @@
     border-color: var(--main-color);
 }
 
-.btn-primary:hover {
-    background-color: darken(var(--main-color), 10%);
-    border-color: darken(var(--main-color), 10%);
+
+
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: #b7c4c9; /* or use #b7c4c9 for the hover color */
+    border-color: #91b2b6; /* or use #91b2b6 for the hover border color */
+    box-shadow: none; /* Esto elimina el resplandor que Bootstrap añade alrededor de los botones */
 }
 
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    outline: none; /* Removes the default outline */
+    box-shadow: none;
+}
 footer {
     background-color: var(--main-color);
     color: white;
