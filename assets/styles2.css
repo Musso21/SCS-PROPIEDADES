@@ -4,19 +4,19 @@ body{
 
 
   
-/* Establecer la tarjeta y el cuerpo de la tarjeta para utilizar flexbox */
 .card {
-  display: flex;
-  flex-direction: column; /* Organiza los hijos de la tarjeta en una columna */
-  height: 100%; /* Asegúrate de que la tarjeta ocupe el 100% de la altura disponible de su contenedor */
-}
-
-.card-body {
-  flex-grow: 1; /* Asegúrate de que el cuerpo de la tarjeta ocupe todo el espacio disponible */
-  display: flex;
-  flex-direction: column; /* Organiza los hijos del cuerpo de la tarjeta en una columna */
-}
-
+    display: flex;
+    flex-direction: column; /* Organiza los hijos de la tarjeta en una columna */
+    height: 100%; /* Asegúrate de que la tarjeta ocupe el 100% de la altura disponible de su contenedor */
+  }
+  
+  .card-body {
+    flex: 1; /* Esto permite que el cuerpo de la tarjeta se expanda y ocupe todo el espacio disponible */
+    display: flex;
+    flex-direction: column; /* Organiza los hijos del cuerpo de la tarjeta en una columna */
+    justify-content: space-between; /* Distribuye el espacio igualmente */
+  }
+  
 .card-body a {
   margin-top: auto; /* Empuja el enlace hacia la parte inferior del cuerpo de la tarjeta */
 }
@@ -37,7 +37,11 @@ body{
     text-align: center; /* Centra el texto */
 }
 
-
+.card-img-top {
+    width: 100%; /* Esto asegura que la imagen sea responsiva y llene el ancho de la tarjeta */
+    height: 200px; /* Define una altura fija para todas las imágenes */
+    object-fit: cover; /* Esto cortará la imagen para que se ajuste al tamaño sin distorsionarse */
+  }
 
 .container {
     width: 100;
@@ -101,6 +105,8 @@ body{
 .btn-primary {
     background-color: var(--main-color);
     border-color: var(--main-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .btn-primary {
@@ -114,7 +120,6 @@ body{
     transform: scale(1.05); /* Reduce el valor de escala para evitar que se salga de la pantalla */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
-
 
 .btn-primary:focus,
 .btn-primary:hover,

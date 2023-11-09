@@ -6,41 +6,67 @@
     <title>SCS Propiedades</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="script/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
 </head>
 <body>
 
+      
 <div class="container">
-    <header class="d-flex justify-content-between align-items-center py-3">
-        <img src="assets/images/logo.jpg" alt="SCS Propiedades Logo" id="logo" class="img-fluid">
-        <nav>
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="propiedades.html">Propiedades</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+    <div class="navbar">
+        <img src="assets/images/logo.png" class="logo" alt="SCS Propiedades Logo">    
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+    </div>  
     </header>
-    
-    <main>
+
+    <main class="container">
         <section id="destacadas" class="py-5">
-            <h1 class="text-center mb-5">Propiedades Destacadas</h1>
+            <h1 class="destacadas-title text-center">PROPIEDADES DESTACADAS</h1>
             <div class="row">
-                <!-- Ejemplo de tarjetas de propiedades -->
+                <!-- Propiedad Existente -->
                 <div class="col-md-4">
                     <div class="card">
                         <img src="assets/propiedades/terreno/terrenoprueba.jpg" class="card-img-top" alt="Terreno">
                         <div class="card-body">
                             <h5 class="card-title">Terreno en San Francisco</h5>
-                            <p class="card-text">Descripción: 15m²</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                            <p class="card-text">Terreno de 15m²</p>
+                            <a href="propiedades.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>  
+                <!-- Nueva Propiedad al Lado -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Contenido de la nueva propiedad -->
+                        <img src="assets/propiedades/casa_quinta/casaquintaprueba.jpg" class="card-img-top" alt="Nueva Propiedad">
+                        <div class="card-body">
+                            <h5 class="card-title">Casa Quinta en San Francisco</h5>
+                            <p class="card-text">Casa quinta con pileta y quincho</p>
+                            <a href="propiedades.html" class="btn btn-primary">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <!-- Repetir las tarjetas según las propiedades que haya que mostrar-->
+                <!-- Puedes agregar más propiedades aquí, siguiendo el mismo patrón -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Contenido de la nueva propiedad -->
+                        <img src="assets/propiedades/salon/salonprueba.jpg" class="card-img-top" alt="Nueva Propiedad">
+                        <div class="card-body">
+                            <h5 class="card-title">Salon Comercial</h5>
+                            <p class="card-text">Salon apto para apertura al público</p>
+                            <a href="propiedades.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    
+
     <footer class="text-center py-4">
         <p>&copy; 2023 SCS Propiedades. Todos los derechos reservados.</p>
     </footer>

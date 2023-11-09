@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head> 
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCS Propiedades</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="script/script.js"></script>
 </head>
 <body>
 
-<div class="container">
-    <header class="d-flex justify-content-between align-items-center py-3">
-        <img src="assets/images/logo.jpg" alt="SCS Propiedades Logo" id="logo" class="img-fluid">
-        <nav>
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="propiedades.html">Propiedades</a></li>
-                <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <div class="container">
+        <div class="navbar">
+            <img src="assets/images/logo.png" class="logo" alt="SCS Propiedades Logo">    
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+        </div>  
     </header>
     
-    <main>
-        <section id="destacadas" class="py-5">
-            <h1 class="text-center mb-5">Propiedades Destacadas</h1>
-            <div class="row">
-                <!-- Ejemplo de tarjetas de propiedades -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/propiedades/terreno/terrenoprueba.jpg" class="card-img-top" alt="Terreno">
-                        <div class="card-body">
-                            <h5 class="card-title">Terreno en San Francisco</h5>
-                            <p class="card-text">Descripción: 15m²</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repetir las tarjetas según las propiedades que haya que mostrar-->
-            </div>
-        </section>
-    </main>
-    
+    <main> 
+       
+        <div>   
+            <img src="./assets/images/imagen1.jpg" alt="imagen1" id="img1" > 
+        </div>
+        
+
+    <section class="gallery">
+      <div class="image-container">
+         <div style="text-align: right"> 
+            <a href="https://wa.me/3564602106"> <img src="./assets/images/whatsapp.png"width="105px" alt="Imagen1" id="imagen1">
+         </div>
+        </a>
+        <br>  
+     </div>
+    </section> 
+
+    <section class="gallery">
+        <div class="image-container">
+           
+           <div style="text-align: right;"> 
+            <a href="https://instagram.com/scspropiedades?igshid=M3pkdHZ4cWR0aWY3"> <img src="./assets/images/instagram.png"width="70px" alt="Imagen2" id="imagen2">
+           </div>
+          </a>
+          <br>  
+       </div> 
+    </section>   
+
+    <section class="gallery">
+        <div class="image-container">
+           <div style="text-align: right;"> 
+            <a href="https://www.facebook.com/scspropiedades/?locale=es_LA"> <img src="./assets/images/facebook.png"width="70px" alt="Imagen3" id="imagen3">
+           </div>
+          </a>
+          <br>  
+       </div> 
+       </section> 
+
     <footer class="text-center py-4">
         <p>&copy; 2023 SCS Propiedades. Todos los derechos reservados.</p>
     </footer>
+    </main> 
+
+   
+
+    
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
