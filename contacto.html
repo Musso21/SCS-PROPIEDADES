@@ -4,7 +4,7 @@
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCS Propiedades</title>
+    <title>Contacto - SCS Propiedades</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
     <script src="script/script.js"></script>
@@ -14,60 +14,58 @@
     <div class="container">
         <div class="navbar">
             <img src="assets/images/logo.png" class="logo" alt="SCS Propiedades Logo">    
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li class="active"><a href="contacto.html">Contacto</a></li>
+            </ul>
         </div>  
     </header>
     
-    <main> 
-       
-        <div>   
-            <img src="./assets/images/imagen1.jpg" alt="imagen1" id="img1" > 
+    <main class="container my-4"> 
+        <div class="contact-section">
+            <h2 class="contact-title">Contacto</h2>
+            
+            <!-- Información de contacto -->
+            <div class="contact-info">
+                <p>Dirección: Corrientes 158, San Francisco, Córdoba, Argentina</p>
+                <p>Email: <a href="mailto:leonardo@gmail.com">leonardo@gmail.com</a></p>
+                <p>Email: <a href="mailto:sofi@gmail.com">sofi@gmail.com</a></p>
+            </div>
+            
+            <!-- Horario de atención -->
+            <div class="opening-hours">
+                <h3>Horario de Atención</h3>
+                <p>Lunes a Viernes: 8:00 - 13:00</p>
+                <p>Sábado y Domingo: CERRADO</p>
+            </div>
+            
+            <!-- Mapa -->
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.243812360733!2d-63.39153088488594!3d-31.422847481400127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a282a279a723%3A0x8a4d706fe6f1a40!2sCorrientes%20158%2C%20San%20Francisco%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1665084345296!5m2!1ses!2sar"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+            <!-- Botones de redes sociales -->
+            <div class="social-media-buttons">
+                <a href="https://wa.me/3564602106" class="social-btn whatsapp"><img src="./assets/images/whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://instagram.com/scspropiedades" class="social-btn instagram"><img src="./assets/images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/scspropiedades" class="social-btn facebook"><img src="./assets/images/facebook.png" alt="Facebook"></a>
+            </div>
         </div>
-        
-
-    <section class="gallery">
-      <div class="image-container">
-         <div style="text-align: right"> 
-            <a href="https://wa.me/3564602106"> <img src="./assets/images/whatsapp.png"width="105px" alt="Imagen1" id="imagen1">
-         </div>
-        </a>
-        <br>  
-     </div>
-    </section> 
-
-    <section class="gallery">
-        <div class="image-container">
-           
-           <div style="text-align: right;"> 
-            <a href="https://instagram.com/scspropiedades?igshid=M3pkdHZ4cWR0aWY3"> <img src="./assets/images/instagram.png"width="70px" alt="Imagen2" id="imagen2">
-           </div>
-          </a>
-          <br>  
-       </div> 
-    </section>   
-
-    <section class="gallery">
-        <div class="image-container">
-           <div style="text-align: right;"> 
-            <a href="https://www.facebook.com/scspropiedades/?locale=es_LA"> <img src="./assets/images/facebook.png"width="70px" alt="Imagen3" id="imagen3">
-           </div>
-          </a>
-          <br>  
-       </div> 
-       </section> 
+    </main>
 
     <footer class="text-center py-4">
         <p>&copy; 2023 SCS Propiedades. Todos los derechos reservados.</p>
     </footer>
-    </main> 
 
-   
-
-    
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

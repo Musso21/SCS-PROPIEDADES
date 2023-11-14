@@ -152,4 +152,27 @@ footer {
  position: relative; right: 10px; 
  position: relative; top: 95px; 
 } 
+.contact-title {
+    font-size: 2.5rem; /* Aumenta el tamaño del título */
+    margin-bottom: 1rem; /* Ajusta el espaciado debajo del título si es necesario */
+}
+
+.contact-info p,
+.opening-hours h3,
+.opening-hours p {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto para la información de contacto y el horario */
+    margin-bottom: 0.5rem; /* Ajusta el espaciado entre los elementos del texto */
+}
+
+.map-container iframe {
+    width: 100%; /* Asegúrate de que el mapa se estire a lo ancho */
+    height: 300px; /* Aumenta la altura del mapa */
+    border: none; /* Remueve el borde si es necesario */
+}
+
+.map-container iframe {
+    width: 100%; /* Asegúrate de que el mapa se estire a lo ancho */
+    height: 300px; /* Aumenta la altura del mapa */
+    border: none; /* Remueve el borde si es necesario */
+}
 
