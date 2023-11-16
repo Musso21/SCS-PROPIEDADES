@@ -14,7 +14,9 @@
 
     <div class="container">
         <div class="navbar">
-            <img src="assets/images/logo.png" class="logo" alt="SCS Propiedades Logo">    
+            <a href="index.html">
+                <img src="assets/images/logo.png" class="logo" alt="SCS Propiedades Logo">    
+                </a>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -25,47 +27,42 @@
     
     <main class="container my-4"> 
         <h1 class="destacadas-title text-center">CONTACTO</h1>
-        <div class="contact-section">
-            <!-- Información de contacto -->
-            <div class="contact-info">
-                <p>Dirección: Corrientes 158, San Francisco, Córdoba, Argentina</p>
-                <p>Email: <a href="mailto:leonardo@gmail.com">leonardo@gmail.com</a></p>
-                <p>Email: <a href="mailto:sofi@gmail.com">sofi@gmail.com</a></p>
+    
+        <div class="contact-container"> <!-- Este es el nuevo contenedor flex -->
+    
+            <div class="contact-details"> <!-- Contenedor para el texto de contacto -->
+                <div class="opening-hours">
+                    <h3>Horario de Atención</h3>
+                    <p>Lunes a Viernes: 8:00 - 13:00</p>
+                    <p>Sábado y Domingo: CERRADO</p>
+                </div>
+    
+                <div class="contact-info">
+                    <h3>Emails de contacto</h3>
+                    <p>Email: <a href="mailto:leonardo@gmail.com">leonardo@gmail.com</a></p>
+                    <p>Email: <a href="mailto:sofi@gmail.com">sofi@gmail.com</a></p>
+                </div>
             </div>
-            
-            <!-- Horario de atención -->
-            <div class="opening-hours">
-                <h3>Horario de Atención</h3>
-                <p>Lunes a Viernes: 8:00 - 13:00</p>
-                <p>Sábado y Domingo: CERRADO</p>
+    
+            <div class="contact-map"> <!-- Contenedor para la imagen -->
+                <a href="https://maps.app.goo.gl/YoEcK5StZvJLeBcU7" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/placacontacto.png" alt="Visita nuestras oficinas" class="contact-placa">
+                </a>
             </div>
-            
-            <!-- Mapa -->
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.243812360733!2d-63.39153088488594!3d-31.422847481400127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a282a279a723%3A0x8a4d706fe6f1a40!2sCorrientes%20158%2C%20San%20Francisco%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1665084345296!5m2!1ses!2sar"
-                    width="600"
-                    height="450"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            
-            <!-- Botones de redes sociales -->
-            <div class="redes-container"> 
-                <ul>
-                    <li><a href="https://wa.me/3564602106" class="social-btn whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
-                    <li><a href="https://instagram.com/scspropiedades" class="social-btn insta"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/scspropiedades" class="social-btn face"><i class="fab fa-facebook-f"></i></a></li>
-                </ul>
-            </div>
-
-
-
+    
         </div>
+    
+        <!-- Botones de redes sociales -->
+        <div class="redes-container"> 
+            <ul>
+                <li><a href="https://wa.me/3564602106" class="social-btn whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://instagram.com/scspropiedades" class="social-btn insta"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/scspropiedades" class="social-btn face"><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
+    
     </main>
+    
 
     <footer class="text-center py-4">
         <p>&copy; 2023 SCS Propiedades. Todos los derechos reservados.</p>

@@ -4,88 +4,69 @@ body{
 
 
   
+/* Establecer la tarjeta y el cuerpo de la tarjeta para utilizar flexbox */
 .card {
-    display: flex;
-    flex-direction: column; /* Organiza los hijos de la tarjeta en una columna */
-    height: 100%; /* Asegúrate de que la tarjeta ocupe el 100% de la altura disponible de su contenedor */
-  }
-  
-  .card-body {
-    flex: 1; /* Esto permite que el cuerpo de la tarjeta se expanda y ocupe todo el espacio disponible */
-    display: flex;
-    flex-direction: column; /* Organiza los hijos del cuerpo de la tarjeta en una columna */
-    justify-content: space-between; /* Distribuye el espacio igualmente */
-  }
-  
+  display: flex;
+  flex-direction: column; /* Organiza los hijos de la tarjeta en una columna */
+  height: 100%; /* Asegúrate de que la tarjeta ocupe el 100% de la altura disponible de su contenedor */
+}
+
+.card-body {
+  flex-grow: 1; /* Asegúrate de que el cuerpo de la tarjeta ocupe todo el espacio disponible */
+  display: flex;
+  flex-direction: column; /* Organiza los hijos del cuerpo de la tarjeta en una columna */
+}
+
 .card-body a {
   margin-top: auto; /* Empuja el enlace hacia la parte inferior del cuerpo de la tarjeta */
 }
 
   
-/* Estilo para el título 'Propiedades Destacadas' */
-.destacadas-title {
-    font-family: 'Open Sans', sans-serif; /* Añade la fuente de Google Fonts */
-    font-size: 2rem; /* Ajusta el tamaño de la fuente a tu gusto */
-    font-weight: 600; /* Peso de la fuente semi-negrita */
-    color: #305656; /* Un color oscuro para el texto */
-    text-transform: uppercase; /* Opcional: transforma el texto a mayúsculas */
-    margin-top: 1rem; /* Ajusta el margen superior según sea necesario */
-    margin-bottom: 1rem; /* Ajusta el margen inferior para dar espacio */
-    padding-top: 0; /* Ajusta el relleno superior si es necesario */
-    padding-bottom: 0.25rem; /* Espacio para la línea decorativa si es necesario */
-    border-bottom: 3px solid #468e90; /* Línea decorativa con el color de la marca */
-    text-align: center; /* Centra el texto */
-}
 
-.card-img-top {
-    width: 100%; /* Esto asegura que la imagen sea responsiva y llene el ancho de la tarjeta */
-    height: 200px; /* Define una altura fija para todas las imágenes */
-    object-fit: cover; /* Esto cortará la imagen para que se ajuste al tamaño sin distorsionarse */
-  }
 
 .container {
     width: 100;
     height: 100;
 }
 
-.navbar{
-    width: 80;
+.navbar {
+    width: 100%; /* O 100%, dependiendo de cómo quieras que se vea */
     margin: auto;
-    padding: 35px 0;
-    padding-bottom: 0;
+    padding: 20px 0; /* Ajusta el padding para dar más espacio */
     display: flex;
     align-items: center;
     justify-content: space-between;
-}   
+} 
 
-.logo{
-    max-width: 180px; 
+.logo {
+    max-width: 220px; /* Aumenta el tamaño máximo del logo según necesites */
     cursor: pointer;
-    top: 10px; 
-    left: 10px; 
+    position: relative; /* Asegúrate de que la posición no sea 'absolute' si quieres que permanezca dentro del flujo del documento */
 }
 
 .navbar ul li {
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 25px; /* Ajusta el margen lateral para más espacio si es necesario */
     position: relative;
+    height: auto; /* Ajusta la altura al contenido */
+    line-height: normal; /* Ajusta la línea de altura al nuevo tamaño de fuente */
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
     color: black;
-    font-size: 1.1rem;
+    font-size: 1.3rem; /* Aumenta el tamaño de la fuente de los elementos de la lista */
 }
 
 .navbar ul li::before {
     content: "";
     height: 3px;
     width: 0%;
-    background:#468e90;
+    background: #468e90;
     position: absolute;
-    left: 0px;
-    bottom: -12px;
+    left: 0;
+    bottom: -10px; /* Ajusta la posición según sea necesario */
     transition: 0.4s ease-out;
 }
 
@@ -105,8 +86,6 @@ body{
 .btn-primary {
     background-color: var(--main-color);
     border-color: var(--main-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .btn-primary {
@@ -120,6 +99,7 @@ body{
     transform: scale(1.05); /* Reduce el valor de escala para evitar que se salga de la pantalla */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
+
 
 .btn-primary:focus,
 .btn-primary:hover,
@@ -143,29 +123,164 @@ footer {
     color: white;
 } 
 
-#img1{ 
-    position: relative; top: 100px;
-}
-#imagen1{ 
-    position: relative; left: -180px;  
-    position: relative; right: 40px; 
-    position: relative; top: 190px;  
+
+.contact-title {
+    font-size: 2.5rem; /* Aumenta el tamaño del título */
+    margin-bottom: 1rem; /* Ajusta el espaciado debajo del título si es necesario */
 }
 
-#imagen2{ 
- position: relative; left: -100px;  
- position: relative; right: 10px; 
- position: relative; top: 95px; 
-} 
-
-.botonesredes{
-    display: flex;
-    height: 100vh;
+.contact-info p,
+.opening-hours h3,
+.opening-hours p {
+    font-size: 25px; /* Ajusta el tamaño del texto para la información de contacto y el horario */
+    margin-bottom: 0.5rem; /* Ajusta el espaciado entre los elementos del texto */
+}
+.contact-info h3,
+.opening-hours h3{
+    font-size: 31px;
+}
+.map-container iframe {
+    width: 100%; /* Asegúrate de que el mapa se estire a lo ancho */
+    height: 300px; /* Aumenta la altura del mapa */
+    border: none; /* Remueve el borde si es necesario */
 }
 
-.botonesredes{
+.map-container iframe {
+    width: 100%; /* Asegúrate de que el mapa se estire a lo ancho */
+    height: 300px; /* Aumenta la altura del mapa */
+    border: none; /* Remueve el borde si es necesario */
+}
+
+.redes-container {
+    text-align: center; /* Centrar los elementos */
+}
+
+.redes-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.redes-container ul li{
     display: inline-block;
-    margin: 0 5px;
-    height: 50px;
+    margin: 0 50px;
     width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%; /* Hacer los íconos circulares */
+    overflow: hidden; /* Cortar cualquier contenido que se salga del círculo */
 }
+
+.redes-container ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background-color: #108083;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    transition: .2s;
+}
+
+
+.redes-container ul li a:hover{
+    transform: scale(1.2);
+    filter: none;
+}
+
+.contact-placa {
+    width: 100%; /* La imagen se estira al máximo de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 8px; /* Opcional: bordes redondeados para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra ligera para dar profundidad */
+}
+
+.contact-content {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio de su contenedor en el eje transversal */
+}
+.contact-info-wrapper {
+    flex: 1;
+    margin-right: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.contact-map {
+    flex-basis: auto; /* Ocupa el espacio de acuerdo al contenido de la imagen */
+    max-width: 40%; /* Ajusta según el tamaño deseado para tu imagen */
+    padding-left: 20px; /* Espaciado entre el texto y la imagen */
+}
+
+/* Asegúrate de que los botones de redes sociales estén centrados y debajo */
+.redes-container {
+    margin-top: 20px; /* Espacio adicional encima de los botones */
+    justify-content: center; /* Centra los botones si están dentro de un flex container */
+}
+
+.redes-container ul {
+    padding: 0;
+}
+
+.redes-container ul li {
+    margin: 0 10px; /* Reduce el espacio entre los botones de redes sociales si es necesario */
+}
+
+.contact-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto y la imagen */
+    justify-content: space-between; /* Espacio entre el texto y la imagen */
+    padding: 20px 0; /* Agrega algo de espaciado vertical para respirar */
+}
+
+.contact-details {
+    flex: 1; /* Ocupa el espacio disponible pero permite crecer */
+    padding-right: 20px; /* Espaciado entre el texto y la imagen */
+}
+.contact-image {
+    flex: 1;
+    text-align: right; /* Alinea la imagen a la derecha */
+}
+
+.social-buttons {
+    text-align: center;
+    margin-top: 20px; /* Espacio por encima de los botones de redes sociales */
+}
+
+
+.contact-info p,
+.opening-hours p {
+    margin-bottom: 10px; /* Espaciado entre los párrafos de contacto */
+    line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
+}   
+
+
+.contact-info {
+    flex: 1; /* Ocupa el espacio disponible pero permite crecer */
+    padding-right: 20px; /* Añade un poco de espacio entre los elementos */
+    margin-top: 140px; /* Añade margen superior para separar del bloque anterior */
+
+}
+
+.opening-hours {
+    margin-bottom: 140px; /* Aumenta el margen inferior para separar del siguiente bloque */
+}
+  
+/* Estilo para el título 'Propiedades Destacadas' */
+.destacadas-title {
+    font-family: 'Open Sans', sans-serif; /* Añade la fuente de Google Fonts */
+    font-size: 2rem; /* Ajusta el tamaño de la fuente a tu gusto */
+    font-weight: 600; /* Peso de la fuente semi-negrita */
+    color: #305656; /* Un color oscuro para el texto */
+    text-transform: uppercase; /* Opcional: transforma el texto a mayúsculas */
+    margin-top: 1rem; /* Ajusta el margen superior según sea necesario */
+    margin-bottom: 1rem; /* Ajusta el margen inferior para dar espacio */
+    padding-top: 0; /* Ajusta el relleno superior si es necesario */
+    padding-bottom: 0.25rem; /* Espacio para la línea decorativa si es necesario */
+    border-bottom: 3px solid #468e90; /* Línea decorativa con el color de la marca */
+    text-align: center; /* Centra el texto */
+}
+
+.card-img-top {
+    width: 100%; /* Esto asegura que la imagen sea responsiva y llene el ancho de la tarjeta */
+    height: 200px; /* Define una altura fija para todas las imágenes */
+    object-fit: cover; /* Esto cortará la imagen para que se ajuste al tamaño sin distorsionarse */
+  }
