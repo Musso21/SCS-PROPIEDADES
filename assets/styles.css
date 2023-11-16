@@ -139,18 +139,19 @@ footer {
 } 
 
 #img1{ 
-    position: relative; top: 100px;
+    position: relative; top: 15px; 
+    position: relative; left: 890px; 
 }
 #imagen1{ 
-    position: relative; left: -180px;  
+    position: relative; left: 873px;  
     position: relative; right: 40px; 
-    position: relative; top: 190px;  
+    position: relative; top: 15px; 
 }
 
 #imagen2{ 
- position: relative; left: -100px;  
+ position: relative; left: 873px;  
  position: relative; right: 10px; 
- position: relative; top: 95px; 
+ position: relative; top: 15px; 
 } 
 .contact-title {
     font-size: 2.5rem; /* Aumenta el tamaño del título */
@@ -176,3 +177,39 @@ footer {
     border: none; /* Remueve el borde si es necesario */
 }
 
+.redes-container {
+    text-align: center; /* Centrar los elementos */
+}
+
+.redes-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.redes-container ul li{
+    display: inline-block;
+    margin: 0 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%; /* Hacer los íconos circulares */
+    overflow: hidden; /* Cortar cualquier contenido que se salga del círculo */
+}
+
+.redes-container ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    transition: .2s;
+}
+
+
+.redes-container ul li a:hover{
+    transform: scale(1.2);
+    filter: none;
+}

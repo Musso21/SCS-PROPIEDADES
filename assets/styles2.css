@@ -158,3 +158,14 @@ footer {
  position: relative; top: 95px; 
 } 
 
+.botonesredes{
+    display: flex;
+    height: 100vh;
+}
+
+.botonesredes{
+    display: inline-block;
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+}
