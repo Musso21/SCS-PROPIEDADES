@@ -6,9 +6,11 @@ body{
   
 /* Establecer la tarjeta y el cuerpo de la tarjeta para utilizar flexbox */
 .card {
-  display: flex;
-  flex-direction: column; /* Organiza los hijos de la tarjeta en una columna */
-  height: 100%; /* Asegúrate de que la tarjeta ocupe el 100% de la altura disponible de su contenedor */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .card-body {
@@ -18,7 +20,9 @@ body{
 }
 
 .card-body a {
-  margin-top: auto; /* Empuja el enlace hacia la parte inferior del cuerpo de la tarjeta */
+    margin-top: auto;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
 }
 
   
