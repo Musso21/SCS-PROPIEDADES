@@ -140,9 +140,12 @@ body{
 footer {
     background-color: var(--main-color);
     color: white;
-} 
-
-
+    padding: 20px 0;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+}
 .contact-title {
     font-size: 2.5rem; /* Aumenta el tamaño del título */
     margin-bottom: 1rem; /* Ajusta el espaciado debajo del título si es necesario */
@@ -282,3 +285,12 @@ footer {
 .opening-hours {
     margin-bottom: 140px; /* Aumenta el margen inferior para separar del siguiente bloque */
 }
+
+#subt{ 
+    position: relative; left: 440px; 
+    position: relative; top: 152px; 
+    position: relative; bottom: 200px;
+
+    color: rgb(92, 90, 90);
+}
+
