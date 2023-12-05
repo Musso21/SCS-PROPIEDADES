@@ -294,3 +294,61 @@ footer p {
     color: rgb(92, 90, 90);
 }
 
+#administracion-consorcios {
+    background-color: #f0f4f7; /* Cambia el código del color según prefieras */
+    border-radius: 15px; /* Si deseas bordes redondeados */
+    padding: 20px;
+    margin-top: 20px; /* Asegura un margen superior si es necesario */
+}
+
+.service-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #305656;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 0;
+    padding-bottom: 0.25rem;
+    border-bottom: 3px solid #468e90;
+    text-align: center;
+    width: 100%; /* Asegúrate de que el título ocupa el ancho completo */
+    box-sizing: border-box; /* Asegúrate de que el padding y el borde estén incluidos en el ancho */
+}
+
+.service-content {
+        background-color: #e5edf1; /* Fondo blanco para el contenido */
+        border-radius: 15px; /* Bordes redondeados para el contenido */
+        padding: 20px;
+        margin-top: 20px; /* Espacio entre el título y el contenido */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave alrededor del contenido */
+        box-sizing: border-box; /* Asegúrate de que el padding y el borde estén incluidos en el ancho */
+    }
+.service-description p {
+    font-size: 1.15rem; /* Tamaño de fuente para la descripción */
+    font-weight: 600;
+    color: rgba(75, 74, 74, 0.836); /* Color de texto para la descripción */
+    line-height: 1.55; /* Altura de línea para mejorar la legibilidad */
+    margin-bottom: 20px; /* Espacio entre los párrafos */
+    
+}
+.service-description h4{
+    color: #424242;
+}
+.service-image {
+    max-width: 100%; /* Asegura que la imagen no sobrepase su contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 12px; /* Bordes redondeados para la imagen */
+    border: 1px solid #e2e8f0; /* Un borde que combine con el color del fondo para integrar */
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+    padding-top: 25px;
+}
+
+@media (min-width: 992px) {
+    .service-image {
+        margin-right: 20px;
+    }
+}
+
