@@ -337,7 +337,8 @@ footer p {
     color: #424242;
 }
 .service-image {
-    max-width: 100%; /* Asegura que la imagen no sobrepase su contenedor */
+    max-width: 100%; /* O un valor específico si quieres que sea más pequeño */
+    margin-right: 0; /* Elimina el margen derecho si antes estaba presente */
     height: auto; /* Mantiene la relación de aspecto de la imagen */
     border-radius: 12px; /* Bordes redondeados para la imagen */
     border: 1px solid #e2e8f0; /* Un borde que combine con el color del fondo para integrar */
@@ -347,8 +348,10 @@ footer p {
 }
 
 @media (min-width: 992px) {
-    .service-image {
-        margin-right: 20px;
+    .col-lg-6 {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
     }
 }
 
